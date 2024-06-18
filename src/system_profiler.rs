@@ -32,6 +32,8 @@ use crate::error::{Error, ErrorKind};
 use crate::types::NumericalUnit;
 use crate::usb::*;
 
+mod nusb;
+
 /// Root JSON returned from system_profiler and used as holder for all static USB bus data
 #[derive(Debug, Serialize, Deserialize)]
 pub struct SPUSBDataType {

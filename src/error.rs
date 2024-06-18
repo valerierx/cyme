@@ -26,6 +26,8 @@ pub enum ErrorKind {
     Io,
     /// [`rusb::Error`] error
     LibUSB,
+    /// [`nusb::Error`] error
+    NUSB,
     /// Error calling udev
     Udev,
     /// Invalid arg for method or cli
